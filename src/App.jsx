@@ -2,6 +2,9 @@ import  Header  from './components/Header/Header.jsx'
 import  Content  from './components/Content/Content.jsx'
 import  Footer  from './components/Footer/Footer.jsx'
 import racoonThumbs from "./assets/RacoonThumbs.png";
+import SnowLeo from "./assets/SnowLeo.jpg";
+import ImageCard from "./components/Image/imageCard.jsx";
+import Image from "./components/Image/Image.jsx";
 
 
 
@@ -20,7 +23,7 @@ function App() {
             padding: "20px",
             backgroundColor: "black",
             color: "white",
-            height: "100vh",
+            height: "200vh",
 
 
           }}>
@@ -34,6 +37,16 @@ function App() {
         paragraphThree='This is the third paragraph.'
         img={racoonThumbs}
         />
+          <ImageCard
+            title="Snow Leopard"
+            description="Meow"
+          >
+              <Image
+              src={SnowLeo}
+              alt="Snow Leopard"
+              />
+              
+          </ImageCard>
         <Footer
         mail='Mathiaskjaerab@gmail.com'
         phoneNumber='81211021'
