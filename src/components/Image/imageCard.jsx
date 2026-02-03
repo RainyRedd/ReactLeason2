@@ -1,20 +1,14 @@
 import React from "react";
+import './ImageCard.css';
 
 const ImageCard = ({ title, description, children }) => {
     return (
-        <div
-            style={{
-                border: "2px solid white",
-                padding: "20px",
-                width: "300px",
-                textAlign: "center",
-                borderRadius: "10px"
-            }}
-        >
-            <h2>{title}</h2>
-            <p>{description}</p>
-
-            {children}
+        <div className="test">
+            <div className="image-card">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                {children}
+            </div>
         </div>
     );
 };
